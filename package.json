@@ -1,0 +1,36 @@
+{
+  "name":"BigBrother",
+  "devDependencies":{
+    "webpack":"~1.4.15",
+    "express": "4.10.6"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "body-parser": "^1.9.3",
+    "bootstrap":"~3.3.1",
+    "css-loader": "^0.9.0",
+    "extract-text-webpack-plugin": "^0.3.5",
+    "html-loader": "^0.2.2",
+    "jsx-loader": "^0.12.0",
+    "less": "^2.1.2",
+    "less-loader": "^2.0.0",
+    "reflux": "~0.2.1",
+    "react": "~0.12.2",
+    "react-hot-loader": "^1.0.0",
+    "react-proxy-loader": "^0.3.1",
+    "react-router": "~0.11.6",
+    "style-loader": "^0.8.2",
+    "react-bootstrap":"0.13.2",
+    "oauth-1.0a": "0.1.1",
+    "crypto-js": "~3.1.2-2",
+    "request":"2.51.0",
+    "browser-request":"0.3.3",
+    "d3":"3.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "webpack --config webpack-dev.config.js --progress --profile --colors --watch",
+    "build-prod" : "webpack --config webpack-production.config.js --progress --profile --colors",
+    "start": "npm run build & node server"
+  }
+}

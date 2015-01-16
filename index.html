@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Big Brother</title>
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.css"/>
+        <link rel="stylesheet" href="css/shared.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Exo+2:400,500italic' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            .cell{
+                margin-top:10px;
+                margin-right: 10px;
+                border: #cdcdcd medium solid;
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+            }
+            .tweetFooter{
+                font-family:'Exo 2', sans-serif;
+                font-width: bold;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="jumbotron" style="padding-top:20px; padding-bottom: 10px;">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="img/bigBrother.png" alt="watching-you"/>
+                    <h1 style="font-family:'Poiret One', cursive;">Big Brother</h1>
+                </div>
+                <div class="col-md-4" style="margin-top:150px;font-family: 'Exo 2', sans-serif;">
+                    <blockquote class="blockquote-reverse">
+                        <p>Private eyes, are watching you</p>
+                        <footer>Hall & Oates</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div id="appContainer"></div>
+    </div>
+    <script type="text/javascript" src="build/shared.js"></script>
+    <script type="text/javascript" src="build/bundle.js"></script>
+    </body>
+</html>
