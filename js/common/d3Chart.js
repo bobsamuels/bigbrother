@@ -158,6 +158,7 @@ d3Chart._drawPoints = function(el, data) {
         .ease("bounce")
 
     entry.append("text")
+        .style("font-size", "12pt")
         .style("color", "black")
         .attr("dx", width / 2)
         .attr("dy", height / 2)

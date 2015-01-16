@@ -120,12 +120,13 @@ var TwitterDetails = React.createClass({
 var TwitterStatus = React.createClass({
     render:function(){
         var divStyle={
-            minHeight:'325px'
+            minHeight:'370px'
         }
-        return(<Col md={3} className="cell">
+        return(<Col md={3} className="cell twitterStatusCell">
             <div style={divStyle}>
                 <div className="row">
-                    <div className="col-md-4"><img src={this.props.status.user.profile_image}/></div>
+                    <div className="profileImg col-md-3"><img src={this.props.status.user.profile_image}/></div>
+                    <div className="col-md-8"></div>
                 </div>
 
                 <blockquote>
@@ -157,7 +158,8 @@ var InstagramDetails = React.createClass({
 var InstagramPost = React.createClass({
     render:function(){
         var divStyle={
-            minHeight:'475px'
+            minHeight:'400px',
+            maxHeight:'550px'
         }
         var captionStyle={
             wordBreak: "break-all",
@@ -166,7 +168,7 @@ var InstagramPost = React.createClass({
 
         var profileImg = {marginLeft:"5px"};
 
-        return(<Col md={5} className="cell">
+        return(<Col md={5} className="cell instagramCell">
             <div style={divStyle}>
                 <a href={this.props.post.link} target="_blank"><img src={this.props.post.photo.url}/></a>
                 <blockquote>
