@@ -21,6 +21,16 @@ d3Chart.create = function(el, props, state) {
     this.update(el, state, false);
 };
 
+d3Chart.reset = function(){
+    d3.selectAll("circle").remove();
+    d3.selectAll("text").remove();
+    d3.selectAll('g').append('text')
+        .attr("dx", 300)
+        .attr("dy", 300)
+        .attr("font-size", "24pt")
+        .text('Loading Data');
+}
+
 d3Chart.update = function(el, state, clear) {
     // Re-compute the scales, and render the data points
     if(clear)

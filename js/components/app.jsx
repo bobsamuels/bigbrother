@@ -248,6 +248,7 @@ var TagItem = React.createClass({
 
 var DataDisplay = React.createClass({
     getData: function(){
+        d3Chart.reset();
         DataActions.getData(this.props.tags);
     },
     render: function(){
